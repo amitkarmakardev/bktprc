@@ -4,7 +4,8 @@
 <div class="row content">
     <h4>Create an album</h4>
     <hr>
-    <form method="post" action="" class="form form-horizontal">
+    <form method="post" action="{{ url('album') }}" class="form form-horizontal">
+    <input type="hidden" name="_token" value="{{csrf_token()}}">
     <div class="form-group">
         <label for="name" class="control-label col-sm-2">Name</label>
         <div class="col-sm-8">
