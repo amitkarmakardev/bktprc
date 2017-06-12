@@ -11,8 +11,14 @@
 |
 */
 
-Route::group(['prefix' => '/'], function(){
-
+Route::group(['prefix' => '/'], function () {
     Route::get('', 'HomeController@welcome');
+});
 
+Route::group(['prefix' => 'album'], function () {
+    Route::get('', 'AlbumController@index');
+    Route::get('create', 'AlbumController@create');
+    Route::get('{id?}', 'AlbumController@view');
+    Route::post('{id?}', 'AlbumController@update');
+    Route::post('', 'AlbumController@save');
 });
