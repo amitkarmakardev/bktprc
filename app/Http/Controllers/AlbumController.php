@@ -42,10 +42,11 @@ class AlbumController extends Controller
 
     public function upload(PhotoUploadRequest $request)
     {
+        $album_name = Album::find($request->get('album_id'))->name;
         foreach ($request->photos as $photo) {
-
-            $filename = $photo->store('photos');
+            $filename = $photo->store($album_name);
+            Image::create(['album_id' => $request->get('album_id'), 'image' => $filename]);
         }
-        return 'Upload successful!';
+        return redirect()->back();
     }
 }
