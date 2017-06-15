@@ -8,10 +8,6 @@
     </div>
         <div class="col-md-12">
             <table class="table table-hover">
-                <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                </tr>
                 @foreach($album_list as $album)
                     <tr>
                         <td>{{$album->name}}</td>
