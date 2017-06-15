@@ -34,12 +34,6 @@ class AlbumController extends Controller
         return view('album.view', compact('album'));
     }
 
-    public function showUploadForm($id)
-    {
-        $album = Album::find($id);
-        return view('album.upload-form', compact('album'));
-    }
-
     public function upload(PhotoUploadRequest $request)
     {
         $album_name = Album::find($request->get('album_id'))->name;
