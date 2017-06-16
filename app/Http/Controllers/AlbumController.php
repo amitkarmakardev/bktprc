@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Album;
 use App\Http\Requests\PhotoUploadRequest;
-use App\Image;
+use App\Photo;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class AlbumController extends Controller
 {
@@ -38,8 +37,9 @@ class AlbumController extends Controller
     {
         $album_name = Album::find($request->get('album_id'))->name;
         foreach ($request->photos as $photo) {
-            $filename = $photo->store($album_name);
-            Image::create(['album_id' => $request->get('album_id'), 'image' => $filename]);
+            $filename = str_random(10) . '.' . $photo->extension();
+            $photo->storeAs("public/{$album_name}", "{$filename}");
+            Photo::create(['album_id' => $request->get('album_id'), 'filename' => $filename]);
         }
         return redirect()->back();
     }
