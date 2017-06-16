@@ -8,18 +8,17 @@
             </h4>
             <hr>
         </div>
-        <div class="col-md-12">
-            <ul style="list-style-type: none">
-                @foreach($album_list as $album)
-                    <li>
-                        <div class="row">
-                            <div class="col-md-3"><a href="{{ url('album', [$album->id]) }}">{{$album->name}}</a></div>
-                            <div class="col-md-9"><p>{{$album->description}}</p></div>
-                        </div>
-
-                    </li>
-                @endforeach
-            </ul>
-        </div>
+        @foreach($album_list as $album)
+            <div class="col-md-4 col-sm-6 album">
+                @if($album->firstPhoto()!=null)
+                    <img class="thumbnail img-responsive"
+                         src="{{ asset("storage/{$album->name}/".$album->firstPhoto())}}">
+                @endif
+                <div class="details">
+                    <a class="name" href="{{ url('album', [$album->id]) }}">{{ $album->name }}</a>
+                    <small class="text-muted">Uploaded: {{ $album->created_at->diffForHumans() }}</small>
+                </div>
+            </div>
+        @endforeach
     </div>
 @stop
