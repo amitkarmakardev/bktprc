@@ -79,10 +79,15 @@ h1, h2, h3, h4 {
     color: #5d700e;
 }
 
+.imgWrapper {
+    overflow: hidden;
+    height: 170px;
+}
+
 /*Album*/
 .album {
-    height: 300px;
-    max-height: 300px;
+    height: 250px;
+    max-height: 250px;
     padding: 10px;
 }
 

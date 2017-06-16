@@ -11,8 +11,10 @@
         @foreach($album_list as $album)
             <div class="col-md-4 col-sm-6 album">
                 @if($album->firstPhoto()!=null)
-                    <img class="thumbnail img-responsive"
-                         src="{{ asset("storage/{$album->name}/".$album->firstPhoto())}}">
+                    <div class="imgWrapper">
+                        <img class="thumbnail img-responsive"
+                             src="{{ asset("storage/{$album->name}/".$album->firstPhoto())}}">
+                    </div>
                 @endif
                 <div class="details">
                     <a class="name" href="{{ url('album', [$album->id]) }}">{{ $album->name }}</a>

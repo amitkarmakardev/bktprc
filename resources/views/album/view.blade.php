@@ -11,13 +11,6 @@
                     <h4 class="modal-title">Upload photos</h4>
                 </div>
                 <div class="modal-body">
-                    @if (count($errors) > 0)
-                        @foreach ($errors->all() as $error)
-                            <script>
-                                console.log("{{$error}}");
-                            </script>
-                        @endforeach
-                    @endif
                     <form action="{{ url('album', ['upload']) }}" method="post" enctype='multipart/form-data'>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                         <input type="hidden" name="album_id" value="{{ $album->id }}">
