@@ -74,9 +74,30 @@ h1, h2, h3, h4{
     color:#5d700e;
 }
 
+/*Album*/
+
+.album-img-div{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul.first {
+    padding:0 0 0 0;
+    margin:0 0 0 0;
+}
+ul.first li {
+    list-style:none;
+    margin-bottom:30px;
+}
+ul.first li img {
+    cursor: pointer;
+}
+
+
 .redb{
     border:1px solid red;
 }
 .blueb{
     border: 1px solid blue;
 }
+
