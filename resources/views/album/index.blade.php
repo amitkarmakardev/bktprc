@@ -3,7 +3,7 @@
 @section('subcontent')
     <div class="row content">
         <div class="col-md-12">
-            <h4>Albums
+            <h4>Photo Albums
                 <small class="pull-right"><a href="{{ url('album', ['create']) }}">add album</a></small>
             </h4>
             <hr>

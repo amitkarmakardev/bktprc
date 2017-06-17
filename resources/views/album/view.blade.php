@@ -24,16 +24,18 @@
     </div>
 
     <div class="row content">
-        <div class="col-md-6">
-            <h4>{{ $album->name }}</h4>
-        </div>
-        <div class="col-md-6">
-            <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#upload-form">
-                <i class="fa fa-upload"></i> Upload Photos
-            </button>
+        <div class="col-md-12 row">
+            <h4 class="col-md-6 col-sm-6 col-xs-6">{{ $album->name }}</h4>
+            <div class="col-md-6 col-xs-6">
+                <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#upload-form">
+                    <i class="fa fa-upload"></i> Upload Photos
+                </button>
+            </div>
+            <div class="clearfix"></div>
+            <hr>
         </div>
         <div class="col-md-12">
-            <hr>
+            <p class="text-info" style="padding:2px 18px 15px 18px; font-family: Bitter, serif">{{ $album->description }}</p>
         </div>
         <div class="col-md-12">
             <ul class="first">
@@ -45,7 +47,6 @@
                 @endforeach
             </ul>
         </div>
-
     </div>
 @stop
 
