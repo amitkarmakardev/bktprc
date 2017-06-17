@@ -35,12 +35,6 @@
         <div class="col-md-12">
             <hr>
         </div>
-        {{--@foreach($album->photos as $photo)--}}
-        {{--<div class="col-md-4 col-sm-6 col-xs-6 album-img-div">--}}
-        {{--<img src="{{ asset("storage/{$album->name}/{$photo->filename}") }}"--}}
-        {{--class="img-responsive img-thumbnail">--}}
-        {{--</div>--}}
-        {{--@endforeach--}}
         <div class="col-md-12">
             <ul class="first">
                 @foreach($album->photos as $photo)
