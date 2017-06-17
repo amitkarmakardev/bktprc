@@ -14,6 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Slabo+27px|Bitter" rel="stylesheet">
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    {{--Bootstrap Photo Gallery--}}
+    <script src="{{ asset('plugins/bs-photo-gallery/jquery.bsPhotoGallery.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('plugins/bs-photo-gallery/jquery.bsPhotoGallery.css') }}">
+
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('css/bktprc.css') }}">
 </head>
@@ -23,5 +28,7 @@
 @yield('content')
 
 </body>
+
+@yield('script')
 
 </html>
