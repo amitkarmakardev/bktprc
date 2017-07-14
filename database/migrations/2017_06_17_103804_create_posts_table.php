@@ -17,8 +17,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->text('title');
             $table->text('body');
-            $table->text('slug');
-            $table->unsignedInteger('album_id');
+            $table->unsignedInteger('album_id')->nullable();
             $table->timestamps();
         });
     }
