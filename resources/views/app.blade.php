@@ -19,6 +19,9 @@
     <script src="{{ asset('plugins/bs-photo-gallery/jquery.bsPhotoGallery.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('plugins/bs-photo-gallery/jquery.bsPhotoGallery.css') }}">
 
+    {{--TinyMCE--}}
+    <script src="{{asset('plugins/tinymce/tinymce.min.js')}}"></script>
+
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('css/bktprc.css') }}">
 </head>

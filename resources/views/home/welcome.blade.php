@@ -13,7 +13,7 @@
                 <hr>
             </div>
             <div class="col-md-12 article">
-                {{ $post->body }}
+                {!! $post->body !!}
             </div>
             
             @if($post->album != null)
