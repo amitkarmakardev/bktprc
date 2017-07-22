@@ -80,9 +80,9 @@ h1, h2, h3, h4 {
     color: #5d700e;
 }
 
-.imgWrapper {
+.img-wrapper {
     overflow: hidden;
-    height: 170px;
+    height: 180px;
 }
 
 /*Album*/

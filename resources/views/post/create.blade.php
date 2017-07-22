@@ -74,7 +74,13 @@
                 ],
                 toolbar1: 'insert | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image',
                 toolbar2: 'preview media | emoticons | help',
-                relative_urls: false
+                relative_urls: false,
+
+                image_class_list: [
+                    {title: 'Image Full', value: 'img img-responsive post-image'},
+                    {title: 'Thumbnail', value: 'img img-responsive img-thumbnail'}
+                ],
+                image_dimensions: false
 
             });
         });

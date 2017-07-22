@@ -35,17 +35,16 @@
             <hr>
         </div>
         <div class="col-md-12">
-            <p class="text-info" style="padding:2px 18px 15px 18px; font-family: Bitter, serif">{{ $album->description }}</p>
+            <p class="text-info"
+               style="padding:2px 18px 15px 18px; font-family: Bitter, serif">{{ $album->description }}</p>
         </div>
-        <div class="col-md-12">
-            <ul class="first">
-                @foreach($album->photos as $photo)
-                    <li>
-                        <img src="{{ asset("storage/{$album->name}/{$photo->filename}") }}"
-                             class="img-responsive img-thumbnail">
-                    </li>
-                @endforeach
-            </ul>
+        <div class="col-md-12 row" id = "Album{{ $album->id }}">
+            @foreach($album->photos as $photo)
+                <div class="col-md-4 img-wrapper">
+                    <img src="{{ asset("storage/{$album->name}/{$photo->filename}") }}"
+                         class="img-responsive img-thumbnail">
+                </div>
+            @endforeach
         </div>
     </div>
 @stop
@@ -53,10 +52,7 @@
 @section('script')
     <script>
         $(document).ready(function () {
-            $('ul.first').bsPhotoGallery({
-                "classes": "col-md-4 col-sm-6 col-xs-6 col-xxs-12",
-                "hasModal": true
-            });
+            var viewer = new Viewer(document.getElementById('Album1'));
         });
     </script>
 @stop
