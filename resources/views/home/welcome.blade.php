@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-9">
             @foreach($posts as $post)
-                <div class="row content">
+                <div class="row content post">
                     <div class="col-md-12">
                         <h4 class="subject" id="{{ $post->id }}">
                             {{ $post->title }}
@@ -13,20 +13,18 @@
                         </h4>
                         <hr>
                     </div>
-                    <div class="col-md-12 article" id="Post{{ $post->id }}">
+                    <div class="col-md-12 body" id="Post{{ $post->id }}">
                         {!! $post->body !!}
                     </div>
 
                     @if($post->album != null)
-                        <div class="col-md-12" style="margin-top: 20px">
-                            <ul class="first">
-                                @foreach($post->album->photos as $photo)
-                                    <li>
-                                        <img src='{{ asset("storage/{$post->album->name}/{$photo->filename}") }}'
+                        <div class="col-md-12 row" style="margin-top: 20px">
+                            @foreach($post->album->photos as $photo)
+                                <div class="col-md-6 img-wrapper">
+                                    <img src='{{ asset("storage/{$post->album->name}/{$photo->filename}") }}'
                                              class="img-responsive img-thumbnail"/>
-                                    </li>
-                                @endforeach
-                            </ul>
+                                </div>
+                            @endforeach
                         </div>
                     @endif
                 </div>

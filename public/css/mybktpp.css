@@ -1,5 +1,5 @@
 body {
-    font-family: Lato, sans-serif;
+    font-family: Lato, AponaLohit, sans-serif;
     background-color: #eeeeee;
 }
 
@@ -9,23 +9,36 @@ h1, h2, h3, h4 {
 }
 
 #banner {
-    height: 400px;
-    background-color: lightgreen;
+    background-color: #62aebd;
+    min-height: 250px;
+    margin: 50px 0 30px 0;
+    position: relative;
 }
 
-.main-container {
-    margin-top: 50px;
+#banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
 }
 
-.main-container p {
-    font-family: "Lato", sans-serif;
+.post .body p {
+    font-family: "Lato", "Noto Sans Bengali", sans-serif;
     font-size: 1.1em;
     font-stretch: condensed;
+}
+
+.post .subject {
+    font-size: 1.4em;
+    font-family: Bitter, SutonnyOMJ, serif;
+    color: #4a3fa8;
 }
 
 /*Navigation menu*/
 .navbar-default {
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
 }
 
 /*Side menu*/
@@ -67,12 +80,6 @@ h1, h2, h3, h4 {
     margin-bottom: 15px;
 }
 
-.content .subject {
-    font-size: 1.3em;
-    font-family: "Bitter", serif;
-    color: #4a3fa8;
-}
-
 .content .time {
     margin-top: 8px;
     font-family: Montserrat, sans-serif;
@@ -97,7 +104,7 @@ h1, h2, h3, h4 {
     max-height: 200px;
 }
 
-.album > .details{
+.album > .details {
     padding: 7px;
 }
 
@@ -120,7 +127,7 @@ ul.first li {
 }
 
 ul.first li img {
-    cursor: pointer;
+    cursor: hand;
 }
 
 .redb {
@@ -131,3 +138,14 @@ ul.first li img {
     border: 1px solid blue;
 }
 
+img {
+    cursor: pointer;
+}
+
+.post {
+
+}
+
+.post .body {
+    font-family: AponaLohit, serif;
+}

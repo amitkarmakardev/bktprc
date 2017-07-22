@@ -24,6 +24,7 @@
 
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('css/mybktpp.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
 </head>
 
 <body>
