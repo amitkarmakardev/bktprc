@@ -7,7 +7,7 @@
     <div id="banner">
         <div class="container">
             <div id="banner-text">
-                <h1 style="color: white; font-size: 4.5em; font-family: Bitter, serif">Nimnochaap</h1>
+                <h1 style="color: white; font-size: 4.5em; font-family: Bitter, Kalpurush, serif">#Chagoler bachha</h1>
             </div>
         </div>
     </div>

@@ -1,3 +1,4 @@
+/*-----------------------------------------------Body and basic elements*/
 body {
     font-family: Lato, AponaLohit, sans-serif;
     background-color: #eeeeee;
@@ -8,48 +9,11 @@ h1, h2, h3, h4 {
     color: #5d700e;
 }
 
-#banner {
-    background-color: #62aebd;
-    min-height: 250px;
-    margin: 50px 0 30px 0;
-    position: relative;
+img {
+    cursor: pointer;
 }
 
-#banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.post .body p {
-    font-family: "Lato", "Noto Sans Bengali", sans-serif;
-    font-size: 1.1em;
-    font-stretch: condensed;
-}
-
-.post .subject {
-    font-size: 1.4em;
-    font-family: Bitter, SutonnyOMJ, serif;
-    color: #4a3fa8;
-}
-
-/*Navigation menu*/
-.navbar-default {
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
-}
-
-/*Side menu*/
-.side-menu a {
-    font-family: Montserrat, sans-serif;
-}
-
-.side-menu a:hover {
-    background-color: lightgreen;
-}
-
+/*-----------------------------------------------Body and basic elements*/
 .box {
     border: 1px solid #eee;
     border-radius: 5px;
@@ -71,28 +35,72 @@ h1, h2, h3, h4 {
     background-color: #fcffef;
 }
 
-.content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    border: 1px solid #dedede;
-    min-height: 350px;
-    margin-bottom: 15px;
+/*-----------------------------------------------Banner*/
+#banner {
+    background-color: #62aebd;
+    min-height: 250px;
+    margin: 50px 0 30px 0;
+    position: relative;
 }
 
-.content .time {
+#banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/*----------------------------------------------- Posts in the welcome page*/
+
+.post, .content {
+    background-color: white;
+    padding: 20px 20px 60px 20px;
+    border-radius: 5px;
+    /*border: 1px solid #dedede;*/
+    min-height: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 1px #999;
+}
+.post .time {
     margin-top: 8px;
     font-family: Montserrat, sans-serif;
     font-size: 0.8em;
     color: #5d700e;
 }
+.post .subject {
+    font-size: 1.4em;
+    font-family: Bitter, "Noto Sans Bengali", serif;
+    color: #4a3fa8;
+}
+.post .body p {
+    font-family: "Lato", "Noto Sans Bengali", sans-serif;
+    font-size: 1.1em;
+    font-stretch: condensed;
+}
 
+
+/*----------------------------------------------- Top navigation menu*/
+.navbar-default {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+/*----------------------------------------------- Side menu*/
+.side-menu a {
+    font-family: Lato, sans-serif;
+}
+
+.side-menu a:hover {
+    background-color: lightgreen;
+}
+
+/*----------------------------------------------- Album*/
 .img-wrapper {
     overflow: hidden;
     height: 180px;
 }
 
-/*Album*/
 .album {
     height: 250px;
     max-height: 250px;
@@ -116,20 +124,7 @@ h1, h2, h3, h4 {
     width: 100%;
 }
 
-ul.first {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-}
-
-ul.first li {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-ul.first li img {
-    cursor: hand;
-}
-
+/*----------------------------------------------- Borders for testing */
 .redb {
     border: 1px solid red;
 }
@@ -138,14 +133,3 @@ ul.first li img {
     border: 1px solid blue;
 }
 
-img {
-    cursor: pointer;
-}
-
-.post {
-
-}
-
-.post .body {
-    font-family: AponaLohit, serif;
-}
