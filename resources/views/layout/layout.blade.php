@@ -1,7 +1,6 @@
 @extends('app')
 
 @section('content')
-
     @include('layout.navbar')
     {{--<img src="{{ asset('images/header.jpg') }}" alt="Header" style="width: 100%; height: 400px; margin-top: 10px; opacity: 0.8">--}}
     <div id="banner">

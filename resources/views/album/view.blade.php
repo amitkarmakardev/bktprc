@@ -1,7 +1,6 @@
 @extends('layout.layout')
 
 @section('subcontent')
-
     <div class="modal fade" id="upload-form" role="dialog">
         <div class="modal-dialog">
             <!-- Modal content-->
@@ -23,30 +22,39 @@
         </div>
     </div>
 
-    <div class="row content">
-        <div class="col-md-12 row">
-            <h4 class="col-md-6 col-sm-6 col-xs-6">{{ $album->name }}</h4>
-            <div class="col-md-6 col-xs-6">
-                <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#upload-form">
-                    <i class="fa fa-upload"></i> Upload Photos
-                </button>
-            </div>
-            <div class="clearfix"></div>
-            <hr>
-        </div>
-        <div class="col-md-12">
-            <p class="text-info"
-               style="padding:2px 18px 15px 18px; font-family: Bitter, serif">{{ $album->description }}</p>
-        </div>
-        <div class="col-md-12 row" id = "Album{{ $album->id }}">
-            @foreach($album->photos as $photo)
-                <div class="col-md-4 img-wrapper">
-                    <img src="{{ asset("storage/{$album->name}/{$photo->filename}") }}"
-                         class="img-responsive img-thumbnail">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="content">
+                <div class="col-md-12 row">
+                    <h4 class="col-md-6 col-sm-6 col-xs-6">{{ $album->name }}</h4>
+                    <div class="col-md-6 col-xs-6">
+                        <button type="button" class="btn btn-primary pull-right" data-toggle="modal"
+                                data-target="#upload-form">
+                            <i class="fa fa-upload"></i> Upload Photos
+                        </button>
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr>
                 </div>
-            @endforeach
+                <div class="col-md-12">
+                    <p class="text-info"
+                       style="padding:2px 18px 15px 18px; font-family: Bitter, serif">{{ $album->description }}</p>
+                </div>
+                <div class="col-md-12 row" id="Album{{ $album->id }}">
+                    @foreach($album->photos as $photo)
+                        <div class="col-md-4 img-wrapper">
+                            <img src="{{ asset("storage/{$album->name}/{$photo->filename}") }}"
+                                 class="img-responsive img-thumbnail">
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            @include('layout.right-pane')
         </div>
     </div>
+
 @stop
 
 @section('script')

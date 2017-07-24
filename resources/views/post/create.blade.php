@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('subcontent')
-    <div class="row content">
+    <div class="content">
         <h4>Create a post</h4>
         <hr>
         <form method="post" action="{{ url('post') }}" class="form form-horizontal">
