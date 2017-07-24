@@ -11,4 +11,9 @@ class HomeController extends Controller
         $posts = Post::with('album')->orderBy('created_at', 'desc')->get();
         return view('home.welcome', compact('posts'));
     }
+
+    public function viewPage($page)
+    {
+        return view("home.".$page);
+    }
 }

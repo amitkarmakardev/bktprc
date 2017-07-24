@@ -13,6 +13,7 @@
 
 Route::group(['prefix' => '/'], function () {
     Route::get('', 'HomeController@welcome');
+    Route::get('{page?}', 'HomeController@viewPage');
 });
 
 
