@@ -1,12 +1,16 @@
 /*-----------------------------------------------Body and basic elements*/
 body {
-    font-family: Lato, "Noto Sans Bengali", sans-serif;
+    font-family: "Open Sans", Lato, "Noto Sans Bengali", sans-serif;
     background-color: #eeeeee;
 }
 
+p{
+    line-height: 1.6em;
+}
+
 h1, h2, h3, h4 {
-    font-family: Montserrat, sans-serif;
-    color: #5d700e;
+    font-family: Lato, sans-serif;
+    color: #3a6e42;
 }
 
 img {
