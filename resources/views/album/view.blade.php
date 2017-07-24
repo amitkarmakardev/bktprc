@@ -42,12 +42,13 @@
                 </div>
                 <div class="col-md-12 row" id="Album{{ $album->id }}">
                     @foreach($album->photos as $photo)
-                        <div class="col-md-4 img-wrapper">
+                        <div class="col-md-6 img-wrapper">
                             <img src="{{ asset("storage/{$album->name}/{$photo->filename}") }}"
                                  class="img-responsive img-thumbnail">
                         </div>
                     @endforeach
                 </div>
+                <div class="clearfix"></div>
             </div>
         </div>
         <div class="col-md-3">

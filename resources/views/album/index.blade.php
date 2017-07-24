@@ -9,7 +9,7 @@
                 </h4>
                 <hr>
                 @foreach($album_list as $album)
-                    <div class="col-md-4 col-sm-6 album">
+                    <div class="col-md-6 col-sm-6 album">
                         @if($album->firstPhoto()!=null)
                             <div class="img-wrapper">
                                 <img class="thumbnail img-responsive"
