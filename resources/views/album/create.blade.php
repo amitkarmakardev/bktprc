@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('subcontent')
-    <div class="row content">
+    <div class="content">
         <h4>Create an album</h4>
         <hr>
         <form method="post" action="{{ url('album') }}" class="form form-horizontal">
@@ -9,7 +9,7 @@
             <div class="form-group">
                 <label for="name" class="control-label col-sm-2">Name</label>
                 <div class="col-sm-8">
-                    <input type="text" name="name" class="form-control" />
+                    <input name="name" class="form-control">
                 </div>
             </div>
             <div class="form-group">
@@ -21,7 +21,8 @@
             <div class="form-group">
                 <div class="col-sm-2"></div>
                 <div class="col-sm-8">
-                    <input style="margin-left: 10px" type="reset" value="Reset" class="btn btn-default pull-right"/>
+                    <input style="margin-left: 10px" type="reset" value="Reset"
+                           class="btn btn-default pull-right"/>
                     <input type="submit" value="Submit" class="btn btn-primary pull-right"/>
                 </div>
             </div>

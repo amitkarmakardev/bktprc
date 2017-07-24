@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Kalpurush';
+    src:
+        local('Kalpurush'),
+        local('Kalpurush-Regular'),
+        url('../fonts/kalpurush.ttf');
+    }
+
+@font-face {
+    font-family: 'Siyam Rupali';
+    src:
+        local('Siyamrupali'),
+        local('Siyamrupali-Regular'),
+        url('../fonts/Siyamrupali.ttf');
+}
+
+@font-face {
+    font-family: 'AponaLohit';
+    src:
+        local('AponaLohit'),
+        local('AponaLohit-Regular'),
+        url('../fonts/AponaLohit.ttf');
+}
+
+@font-face {
+    font-family: 'Bangla';
+    src:
+            local('Bangla'),
+            local('Bangla-Regular'),
+            url('../fonts/Bangla.ttf');
+}
+
+@font-face {
+    font-family: 'Noto Sans Bengali';
+    src:
+            local('Noto Sans Bengali'),
+            local('Noto Sans Bengali-Regular'),
+            url('../fonts/Noto Sans Bengali.ttf');
+}
+
+@font-face {
+    font-family: 'SutonnyOMJ';
+    src:
+            local('SutonnyOMJ'),
+            local('SutonnyOMJ-Regular'),
+            url('../fonts/SutonnyOMJ.ttf');
+}

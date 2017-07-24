@@ -1,32 +1,46 @@
 @extends('layout.layout')
 
 @section('subcontent')
-<div class="row">
-    <div class="col-md-9">
-    <div class="row content">
-        <div class="col-md-12">
-            <h4 class="subject">
-                The Man Who Knew: The Life and Times of Alan Greenspan by Sebastian Mallaby <small> - 3 min ago</small>
-            </h4>
-            <hr>
+    <div class="row">
+        <div class="col-md-9">
+            @foreach($posts as $post)
+                <div class="post">
+                    <h4 class="subject" id="{{ $post->id }}">
+                        {{ $post->title }}
+                        <small class="pull-right">{{ $post->created_at->diffForHumans() }}</small>
+                    </h4>
+                    <hr>
+                    <div id="Post{{ $post->id }}">
+                        <div class="col-md-12 body">
+                            {!! $post->body !!}
+                        </div>
+                        @if($post->album != null)
+                            <div class="col-md-12 row" style="margin-top: 20px">
+                                @foreach($post->album->photos as $photo)
+                                    <div class="col-md-6 img-wrapper">
+                                        <img src='{{ asset("storage/{$post->album->name}/{$photo->filename}") }}'
+                                             class="img-responsive img-thumbnail"/>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endif
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            @endforeach
         </div>
-        <div class="col-md-12 article">
-            <p>I agree that Sebastian Mallaby’s detailed and well-sourced The Man Who Knew: The Life and Times of Alan Greenspan, will be essential for every future economic historian studying the Greenspan era. That said, Mallaby does not convey to his readers a sound understanding of monetary policy. I disagree with Mallaby’s claim that Greenspan could and should have done something about the housing and subprime mortgage bubbles. Peter Wallison makes a strong case that the affordable housing quotas did not just “encourage” but forced the GSEs to buy subprime mortgages. Information available in real time on aggregate subprime mortgage issuance was seriously flawed because the GSEs did not report accurately. Greenspan cannot be held responsible for the GSEs hiding the subprime debt on their balance sheets. These mortgages were central to the crisis. It seems improbable that any monetary policy mistake of 2001–05 was large enough to create the crisis. Mallaby could have written a final chapter emphasizing the Maestro resisting the power of a malign and evil pair of GSEs and the power of the President and Congress of the United States pursuing a disastrous housing policy. Despite the Maestro’s best efforts, Leviathan triumphed and brought ruin upon the Nation.</p>
+        <div class="col-md-3">
+            @include('layout.right-pane')
         </div>
     </div>
-    </div>
-    <div class="col-md-3">
-        <div class="box notice-box">
-            <h4> <i class="fa fa-pencil-square-o"></i> Notice</h4>
-            <hr>
-            <a href="#">Online quiz result <br> May 2017</a>
-            <a href="#">Online application for badminton, volleyball</a>
-            <a href="#"> অনলাইন কুইজ প্রতিযোগিতা</a>
-        </div>
-        <div class="box birthday-box">
-            <h4><i class="fa fa-birthday-cake"></i> Birthdays</h4>
-            <hr>
-        </div>
-    </div>
-</div>
+@stop
+
+@section('script')
+    <script>
+        $(document).ready(function () {
+            @foreach($posts as $post)
+new Viewer(document.getElementById("Post{{ $post->id }}"));
+            @endforeach
+        });
+    </script>
 @stop

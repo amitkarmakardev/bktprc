@@ -15,12 +15,16 @@
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    {{--Bootstrap Photo Gallery--}}
-    <script src="{{ asset('plugins/bs-photo-gallery/jquery.bsPhotoGallery.js') }}"></script>
-    <link rel="stylesheet" href="{{ asset('plugins/bs-photo-gallery/jquery.bsPhotoGallery.css') }}">
+    {{--TinyMCE--}}
+    <script src="{{asset('plugins/tinymce/tinymce.min.js')}}"></script>
+
+    {{--ViewerJS--}}
+    <script src="{{asset('plugins/viewerjs/viewerjs.min.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('plugins/viewerjs/viewerjs.min.css')}}">
 
     {{-- css --}}
-    <link rel="stylesheet" href="{{ asset('css/bktprc.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mybktpp.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
 </head>
 
 <body>

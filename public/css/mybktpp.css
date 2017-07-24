@@ -1,0 +1,145 @@
+/*-----------------------------------------------Body and basic elements*/
+body {
+    font-family: Lato, "Noto Sans Bengali", sans-serif;
+    background-color: #eeeeee;
+}
+
+h1, h2, h3, h4 {
+    font-family: Montserrat, sans-serif;
+    color: #5d700e;
+}
+
+img {
+    cursor: pointer;
+}
+
+/*-----------------------------------------------Body and basic elements*/
+.box {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+
+.box a {
+    padding: 5px;
+    display: block;
+}
+
+.notice-box {
+    background-color: #fcffef;
+}
+
+.birthday-box {
+    background-color: #fcffef;
+}
+
+/*-----------------------------------------------Banner*/
+#banner {
+    background-color: #62aebd;
+    min-height: 250px;
+    margin: 50px 0 30px 0;
+    position: relative;
+}
+
+#banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+#banner-text h1 {
+    color: white;
+    font-size: 4em;
+    font-family: Bitter, Kalpurush, serif;
+}
+
+/*----------------------------------------------- Posts in the welcome page*/
+
+.post, .content {
+    background-color: white;
+    padding: 20px 20px 60px 20px;
+    border-radius: 5px;
+    /*border: 1px solid #dedede;*/
+    min-height: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 1px #999;
+}
+
+.post .time {
+    margin-top: 8px;
+    font-family: Montserrat, sans-serif;
+    font-size: 0.8em;
+    color: #5d700e;
+}
+
+.post .subject {
+    font-size: 1.4em;
+    font-family: Bitter, "Noto Sans Bengali", serif;
+    color: #4a3fa8;
+}
+
+.post .body p {
+    font-family: "Lato", "Noto Sans Bengali", sans-serif;
+    font-size: 1.1em;
+    font-stretch: condensed;
+}
+
+/*----------------------------------------------- Top navigation menu*/
+.navbar-default {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+}
+
+/*----------------------------------------------- Side menu*/
+.side-menu a {
+    font-family: Lato, sans-serif;
+}
+
+.side-menu a:hover {
+    background-color: lightgreen;
+}
+
+/*----------------------------------------------- Album*/
+.img-wrapper {
+    overflow: hidden;
+    height: 180px;
+    margin-bottom: 15px;
+}
+
+.album {
+    height: 250px;
+    max-height: 250px;
+    padding: 10px;
+}
+
+.album > .thumbnail {
+    opacity: 0.9;
+    max-height: 200px;
+}
+
+.album > .details {
+    padding: 7px;
+}
+
+.album > .details > .name {
+    font-size: 1.05em;
+    color: #2a88bd;
+    font-family: Bitter, serif;
+    display: block;
+    width: 100%;
+}
+
+/*----------------------------------------------- Borders for testing */
+.redb {
+    border: 1px solid red;
+}
+
+.blueb {
+    border: 1px solid blue;
+}
+

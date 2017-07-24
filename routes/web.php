@@ -24,3 +24,10 @@ Route::group(['prefix' => 'album'], function () {
     Route::post('upload', 'AlbumController@upload');
     Route::post('{id?}', 'AlbumController@update');
 });
+
+Route::group(['prefix' => 'post'], function () {
+    Route::get('', 'PostController@index');
+    Route::get('create', 'PostController@create');
+    Route::post('', 'PostController@save');
+    Route::delete('{slug?}', 'PostController@delete');
+});
