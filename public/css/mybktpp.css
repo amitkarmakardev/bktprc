@@ -47,8 +47,15 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
     text-align: center;
     transform: translate(-50%, -50%);
+}
+
+#banner-text h1 {
+    color: white;
+    font-size: 4em;
+    font-family: Bitter, Kalpurush, serif;
 }
 
 /*----------------------------------------------- Posts in the welcome page*/
@@ -62,23 +69,25 @@ img {
     margin-bottom: 30px;
     box-shadow: 0 1px 1px #999;
 }
+
 .post .time {
     margin-top: 8px;
     font-family: Montserrat, sans-serif;
     font-size: 0.8em;
     color: #5d700e;
 }
+
 .post .subject {
     font-size: 1.4em;
     font-family: Bitter, "Noto Sans Bengali", serif;
     color: #4a3fa8;
 }
+
 .post .body p {
     font-family: "Lato", "Noto Sans Bengali", sans-serif;
     font-size: 1.1em;
     font-stretch: condensed;
 }
-
 
 /*----------------------------------------------- Top navigation menu*/
 .navbar-default {
