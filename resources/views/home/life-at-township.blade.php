@@ -24,12 +24,21 @@
                 <br>
                 <h4>Recreation</h4>
                 <hr>
-                <p>There are two big clubs, BKTP Recreation Club and BKTP Officer's Recreation Club for the employees.
+                <p>There are two big clubs, <a href="{{ url('recreation-club') }}">BKTPP Recreation Club</a> and <a
+                            href="{{ url('officers-club') }}">BKTP Officer's Recreation Club</a> for the employees.
                     Both the club organize many activities, such as cultural event, drama, get together party, food
                     festival, trekking and outing etc throughout the year. Both the club organize annual cultural
                     program where many renowned celebrity has already performed. Apart from this, during the first week
                     of January, BKTPP Rural and Industrial Fair is organized.
                 </p>
+                <br>
+                <h4>Connectivity</h4>
+                <hr>
+                <p>BKTPP Township is well connected by NH60 with cities like Suri, Baharampur, Durgapur, Asansol etc. SBSTC
+                    and NBSTC buses halt at Kochujore bustand near the Township Gate - 2. There are local buses also. Besides
+                    BKTPP authority provides bus from township to Suri and back in regular basis.
+                </p>
+                <p>Trains which runs between Howrah and Suri, can be availed to reach the township.</p>
             </div>
         </div>
         <div class="col-md-3">
