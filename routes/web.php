@@ -11,12 +11,6 @@
 |
 */
 
-Route::group(['prefix' => '/'], function () {
-    Route::get('', 'HomeController@welcome');
-    Route::get('{page?}', 'HomeController@viewPage');
-});
-
-
 Route::group(['prefix' => 'album'], function () {
     Route::get('', 'AlbumController@index');
     Route::get('create', 'AlbumController@create');
@@ -31,4 +25,9 @@ Route::group(['prefix' => 'post'], function () {
     Route::get('create', 'PostController@create');
     Route::post('', 'PostController@save');
     Route::delete('{slug?}', 'PostController@delete');
+});
+
+Route::group(['prefix' => '/'], function () {
+    Route::get('', 'HomeController@welcome');
+    Route::get('{page?}', 'HomeController@viewPage');
 });
