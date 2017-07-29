@@ -31,14 +31,6 @@
                     program where many renowned celebrity has already performed. Apart from this, during the first week
                     of January, BKTPP Rural and Industrial Fair is organized.
                 </p>
-                <br>
-                <h4>Connectivity</h4>
-                <hr>
-                <p>BKTPP Township is well connected by NH60 with cities like Suri, Baharampur, Durgapur, Asansol etc. SBSTC
-                    and NBSTC buses halt at Kochujore bustand near the Township Gate - 2. There are local buses also. Besides
-                    BKTPP authority provides bus from township to Suri and back in regular basis.
-                </p>
-                <p>Trains which runs between Howrah and Suri, can be availed to reach the township.</p>
             </div>
         </div>
         <div class="col-md-3">
