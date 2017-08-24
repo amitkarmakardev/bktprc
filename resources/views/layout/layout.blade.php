@@ -1,13 +1,12 @@
 @extends('app')
 
 @section('content')
-    @include('layout.navbar')
-    <div id="banner">
-        <div id="banner-text">
-            <h1>#GetItDone</h1>
-        </div>
+    <div class="container" style="margin-bottom: 30px; margin-top:65px">
+        <img src="{{ asset('images/club.jpg') }}" / style="width: 100%; height: 350px">
     </div>
     <div class="container main-container">
+        @include('layout.navbar')    
+        
         <div class="row">
             <div class="col-md-2 col-sm-12">
                 @include('layout.sidemenu')
