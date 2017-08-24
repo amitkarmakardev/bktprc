@@ -27,7 +27,14 @@ Route::group(['prefix' => 'post'], function () {
     Route::delete('{slug?}', 'PostController@delete');
 });
 
+Route::group(['prefix' => 'member'], function(){
+    Route::get('', 'MemberController@index');
+    Route::get('create', 'MemberController@create');
+    Route::post('', 'MemberController@save');
+});
+
 Route::group(['prefix' => '/'], function () {
     Route::get('', 'HomeController@welcome');
     Route::get('{page?}', 'HomeController@viewPage');
 });
+

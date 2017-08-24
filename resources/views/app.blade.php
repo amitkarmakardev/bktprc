@@ -22,6 +22,9 @@
     <script src="{{asset('plugins/viewerjs/viewerjs.min.js')}}"></script>
     <link rel="stylesheet" href="{{asset('plugins/viewerjs/viewerjs.min.css')}}">
 
+    {{-- VueJS --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.4.2/vue.js"></script>
+
     {{-- css --}}
     <link rel="stylesheet" href="{{ asset('css/mybktpp.css') }}">
     <link rel="stylesheet" href="{{ asset('css/fonts.css') }}">
