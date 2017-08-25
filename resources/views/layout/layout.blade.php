@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-    <div class="container" style="margin-bottom: 30px; margin-top:65px">
+    <div class="container" style="margin-bottom: 30px; margin-top:52px">
         <img src="{{ asset('images/club.jpg') }}" / style="width: 100%; height: 350px">
     </div>
     <div class="container main-container">

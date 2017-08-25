@@ -48,7 +48,7 @@
                 <div class="col-sm-6">
                     <select type="text" name="associated_to" class="form-control">
                         @foreach($primary_members as $member)
-                            <option value="{{ $member->member_id}}"> {{ $member->member_id}}, {{ $member->name }} </option>
+                            <option value="{{ $member->member_id }}"> {{ $member->member_id}}, {{ $member->name }} </option>
                         @endforeach
                     </select>
                 </div>

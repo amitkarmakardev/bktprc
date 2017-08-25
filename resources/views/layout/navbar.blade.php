@@ -14,6 +14,6 @@
         <li><a href="">Login</a></li>
         <li><a href="">Sign up</a></li>
       </ul>
-    </div><!--/.nav-collapse -->
+    </div>
   </div>
 </nav>

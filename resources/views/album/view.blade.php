@@ -40,10 +40,10 @@
                     <p class="text-info"
                        style="padding:2px 18px 15px 18px; font-family: Bitter, serif">{{ $album->description }}</p>
                 </div>
-                <div class="col-md-12 row" id="Album{{ $album->id }}">
+                <div class="col-md-12 row" id="album">
                     @foreach($album->photos as $photo)
                         <div class="col-md-6 img-wrapper">
-                            <img src="{{ asset("storage/{$album->name}/{$photo->filename}") }}"
+                            <img src='{{ asset("storage/{$album->name}/{$photo->filename}") }}'
                                  class="img-responsive img-thumbnail">
                         </div>
                     @endforeach
@@ -61,7 +61,7 @@
 @section('script')
     <script>
         $(document).ready(function () {
-            var viewer = new Viewer(document.getElementById('Album1'));
+            var viewer = new Viewer(document.getElementById('album'));
         });
     </script>
 @stop
