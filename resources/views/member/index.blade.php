@@ -19,14 +19,14 @@
             @foreach($member_list as $member)
                 <tr>
                     <td>{{ $member->member_id}}</td>
-                    <td>{{ $member->type }}</td>
+                    <td>{{ ucwords($member->type) }}</td>
                     <td>{{ $member->name }}</td>
                     <td>
                     @if($member->associatedTo)
                         {{ $member->associatedTo->name }}
                     @endif
                     </td>
-                    <td>{{ $member->relation }}</td>
+                    <td>{{ ucwords($member->relation) }}</td>
                     <td><a href="{{ url('member', [$member->id, 'edit']) }}">Edit</a></td>
                 </tr>
             @endforeach

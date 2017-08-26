@@ -30,7 +30,9 @@ Route::group(['prefix' => 'post'], function () {
 Route::group(['prefix' => 'member'], function(){
     Route::get('', 'MemberController@index');
     Route::get('create', 'MemberController@create');
+    Route::get('{id?}/edit', 'MemberController@edit');
     Route::post('', 'MemberController@save');
+    Route::post('{id?}', 'MemberController@update');
 });
 
 Route::group(['prefix' => '/'], function () {

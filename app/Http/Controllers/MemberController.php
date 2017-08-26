@@ -22,4 +22,16 @@ class MemberController extends Controller
         $member = Member::create($request->all());
         return redirect()->back();
     }
+
+    public function edit($id){
+        $primary_members = Member::where('type', 'primary')->get();
+        $member = Member::find($id);
+        return view('member.edit', compact('member', 'primary_members'));
+    }
+
+    public function update(MemberCreateRequest $request, $id){
+        $member = Member::find($id);
+        $member->update($request->all());
+        return redirect()->to(url('member'));
+    }
 }
