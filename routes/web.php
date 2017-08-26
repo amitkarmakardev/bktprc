@@ -35,6 +35,14 @@ Route::group(['prefix' => 'member'], function(){
     Route::post('{id?}', 'MemberController@update');
 });
 
+Route::group(['prefix' => 'book'], function(){
+    Route::get('', 'BookController@index');
+    Route::get('create', 'BookController@create');
+    Route::get('{id?}/edit', 'BookController@edit');
+    Route::post('', 'BookController@save');
+    Route::post('{id?}', 'BookController@update');
+});
+
 Route::group(['prefix' => '/'], function () {
     Route::get('', 'HomeController@welcome');
     Route::get('{page?}', 'HomeController@viewPage');
