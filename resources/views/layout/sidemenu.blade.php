@@ -6,3 +6,9 @@
     <a href="{{ url('album') }}" class="list-group-item"><i class="fa fa-photo"></i> &nbsp;Photo Albums</a>
     <a href="#" class="list-group-item"><i class="fa fa-calendar"></i> &nbsp;Program Calendar</a>
 </div>
+
+<h5>Admin Panel</h5>
+<div class="list-group side-menu">
+    <a href="{{ url('book') }}" class="list-group-item"><i class="fa fa-book"></i> &nbsp;Book</a>
+    <a href="{{ url('member') }}" class="list-group-item"><i class="fa fa-user"></i> &nbsp;Member</a>
+</div>
