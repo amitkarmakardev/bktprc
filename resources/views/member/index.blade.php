@@ -2,7 +2,7 @@
 
 @section('subcontent')
     <div class="content">
-        <h4>All members</h4>
+        <h4>All members (<a href="{{ url('member', ['create']) }}">+</a>)</h4>
         <hr>
         <table class="table table-hover">
         <thead>
