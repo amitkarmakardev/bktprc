@@ -44,13 +44,13 @@
 </div>
 
 <div class="form-group">
-    <label for="description" class="control-label col-sm-2">Description</label>
+    <label for="synopsis" class="control-label col-sm-2">Synopsis</label>
     <div class="col-sm-8">
-        <textarea name="description" class="form-control" rows="5" v-model="description"></textarea>
+        <textarea name="synopsis" class="form-control" rows="5" v-model="synopsis"></textarea>
     </div>
     <div class="col-sm-4">
-        @if($errors->has('description'))
-            @foreach($errors->get('description') as $error)
+        @if($errors->has('synopsis'))
+            @foreach($errors->get('synopsis') as $error)
                 <span class="text-danger">{{ $error}}</span>
             @endforeach
         @endif

@@ -16,7 +16,7 @@
                 book_id: "{{ $book->book_id }}",
                 type: "{{ $book->type }}",
                 name: "{{ $book->name }}",
-                description: "{{ $book->description }}"
+                synopsis: "{{ $book->synopsis }}"
             }
         });
     </script>

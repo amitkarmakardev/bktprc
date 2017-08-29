@@ -16,7 +16,7 @@
                 book_id: null,
                 type: null,
                 name: null,
-                description: null
+                synopsis: null
             }
         });
     </script>
