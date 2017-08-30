@@ -39,6 +39,9 @@ Route::group(['prefix' => 'book'], function(){
     Route::get('', 'BookController@index');
     Route::get('create', 'BookController@create');
     Route::get('{id?}/edit', 'BookController@edit');
+    Route::get('issue-receive', 'IssueController@showIssueReceive');
+    Route::post('{id?}/issue', 'IssueController@issue');
+    Route::post('{id?}/receive', 'IssueController@receive');
     Route::post('', 'BookController@save');
     Route::post('{id?}', 'BookController@update');
 });

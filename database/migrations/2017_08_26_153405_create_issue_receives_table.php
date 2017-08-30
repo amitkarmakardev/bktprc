@@ -16,9 +16,8 @@ class CreateIssueReceivesTable extends Migration
         Schema::create('issue_receives', function (Blueprint $table) {
             $table->increments('id');
             $table->string('book_id');
-            $table->string('member_id');
-            $table->dateTime('issued_at');
-            $table->dateTime('received_at');
+            $table->string('issued_to');
+            $table->dateTime('received_at')->nullable();
             $table->timestamps();
         });
     }
