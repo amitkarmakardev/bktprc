@@ -20,6 +20,7 @@ class BookController extends Controller
 
     public function save(BookCreateRequest $request){
         $book = Book::create($request->all());
+        $request->session()->flash('status', 'Book created successfully!');
         return redirect()->to(url('book'));
     }
 
@@ -31,6 +32,7 @@ class BookController extends Controller
     public function update(BookCreateRequest $request, $id){
         $book = Book::find($id);
         $book->update($request->all());
+        $request->session()->flash('status', 'Book updated successfully!');
         return redirect()->to(url('book'));
     }
 }

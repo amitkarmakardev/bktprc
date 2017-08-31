@@ -20,6 +20,7 @@ class MemberController extends Controller
 
     public function save(MemberCreateRequest $request){
         $member = Member::create($request->all());
+        $request->session()->flash('status', 'Member '.$member->member_id.' created successfully!');
         return redirect()->back();
     }
 
@@ -32,6 +33,7 @@ class MemberController extends Controller
     public function update(MemberCreateRequest $request, $id){
         $member = Member::find($id);
         $member->update($request->all());
+        $request->session()->flash('status', 'Member '.$member->member_id.' updated successfully!');
         return redirect()->to(url('member'));
     }
 }

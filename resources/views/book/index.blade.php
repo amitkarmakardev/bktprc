@@ -4,6 +4,7 @@
     <div class="content">
         <h4>All books (<a href="{{ url('book', ['create']) }}">+</a>)</h4>
         <hr>
+        @include('layout.status')
         <table class="table table-hover">
         <thead>
            <tr>
@@ -19,7 +20,7 @@
                     <td>{{ $book->book_id}}</td>
                     <td>{{ $book->type}}</td>
                     <td>{{ $book->name }}</td>
-                    <td><a href="{{ url('book', [$book->id, 'edit']) }}">Edit</a></td>
+                    <td><a href="{{ url('book', [$book->id, 'edit']) }}" class="btn btn-success">Edit</a></td>
                 </tr>
             @endforeach
         </tbody>

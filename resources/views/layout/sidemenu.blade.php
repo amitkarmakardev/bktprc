@@ -11,4 +11,5 @@
 <div class="list-group side-menu">
     <a href="{{ url('book') }}" class="list-group-item"><i class="fa fa-book"></i> &nbsp;Book</a>
     <a href="{{ url('member') }}" class="list-group-item"><i class="fa fa-user"></i> &nbsp;Member</a>
+    <a href="{{ url('book', ['issue-receive']) }}" class="list-group-item"><i class="fa fa-refresh"></i> &nbsp;Issue Receive</a>
 </div>

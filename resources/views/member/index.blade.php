@@ -4,6 +4,7 @@
     <div class="content">
         <h4>All members (<a href="{{ url('member', ['create']) }}">+</a>)</h4>
         <hr>
+        @include('layout.status')
         <table class="table table-hover">
         <thead>
            <tr>
@@ -27,7 +28,7 @@
                     @endif
                     </td>
                     <td>{{ ucwords($member->relation) }}</td>
-                    <td><a href="{{ url('member', [$member->id, 'edit']) }}">Edit</a></td>
+                    <td><a href="{{ url('member', [$member->id, 'edit']) }}" class="btn btn-success">Edit</a></td>
                 </tr>
             @endforeach
         </tbody>
