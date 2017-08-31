@@ -11,6 +11,7 @@
                <th>Accession ID</th>
                <th>Type</th>
                <th>Book Name</th>
+               <th>Availability</th>
                <th>Edit</th>
            </tr>
         </thead>
@@ -20,6 +21,7 @@
                     <td>{{ $book->book_id}}</td>
                     <td>{{ $book->type}}</td>
                     <td>{{ $book->name }}</td>
+                    <td>{{ $book->availability() }}</td>
                     <td><a href="{{ url('book', [$book->id, 'edit']) }}" class="btn btn-success">Edit</a></td>
                 </tr>
             @endforeach
